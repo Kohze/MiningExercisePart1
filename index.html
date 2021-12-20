@@ -36,11 +36,11 @@
 
     <script>
 
-      
+    var nonce = -1
 
     function GenNonce() {
 
-        var nonce = Math.floor(Math.random() * 10);
+        nonce++
 
         document.getElementById('nonce').innerHTML = 'Nonce:' + nonce;
 
