@@ -62,12 +62,7 @@
 
         var firstNum = hash1.hex().charAt(0);
 
-        if(firstNum == 0) {
-          console.log("Congratulations you mined a block!")
-          document.getElementById('blockstatus').innerHTML = "Congratulations! You mined a block!<br><br>Copy the last 4 characters of the hash for the next exercise."
-        } else {
-          document.getElementById('blockstatus').innerHTML = ""
-        }
+        {firstNum==0?document.getElementById('blockstatus').innerHTML = "Congratulations! You mined a block!<br><br>Copy the last 4 characters of the hash for the next exercise.":document.getElementById('blockstatus').innerHTML = ""}
 
     }
 
